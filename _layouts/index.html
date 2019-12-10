@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="content">
+  <h1>Latest Episodes</h1>
+  <hr>
+  <div class="episodes-list">
+    {% assign episodes = site.data.mapped_data | sort: "episode_pub_date" | reverse %}
+    {% for episode in episodes limit: 10 %}
+    <div class="episode">
+      <div class="episode-thumbnail">
+        <img class="thumbnail" src="{{ episode.episode_feed_cvr_img }}">
+        <button class="go-to-page">Listen >></button>
+        <!-- {% if episode.episode_keywords %}
+        <div class="episode-tags">
+          {{ episode.episode_keywords | join: "," }}
+        </div>
+        {% endif %} -->
+      </div>
+      <div class="episode-content">
+        <h2>{{ episode.episode_feed_title }}</h2>
+        <h3>{{ episode.episode_title }}</h3>
+        <div class="episode-meta">
+          <datetime>{{ episode.episode_pub_date | date_to_long_string }}</datetime>
+          <span class="meta-separator"> | </span>
+          <p>{{ episode.episode_duration }}</p>
+        </div>
+        <p>{{ episode.episode_desc | truncatewords: 40 }}</p>
+      </div>
+      <!-- <p>{{ episode.episode_duration_unix }}</p> -->
+      <!-- <audio controls>
+        <source src="{{ episode.episode_url }}" type='{{ episode.episode_format }}'>
+      </audio> -->
+    </div>
+    {% endfor %}
+  </div>
+</div>
