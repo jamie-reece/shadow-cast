@@ -4,10 +4,21 @@
     "feed_title": "Backlisted",
     "feed_desc": "The literary podcast presented by John Mitchinson and Andy Miller. Brought to you by Unbound. Visit www.backlisted.fm",
     "feed_lang": "en",
-    "feed_last_built": "Mon, 25 Nov 2019 09:10:49 +0000",
+    "feed_last_built": "Mon, 09 Dec 2019 12:07:05 +0000",
     "feed_cvr_img": "<itunes:image href=\"http://i1.sndcdn.com/avatars-000190919571-rmda96-original.jpg\"/>",
     "feed_category": "<itunes:category text=\"Arts\"/>",
     "episodes": [
+      {
+        "episode_title": "Riceyman Steps by Arnold Bennett",
+        "episode_desc": "Arnold Bennett's 1923 novel Riceyman Steps is the subject of this episode. Joining John and Andy to discuss it are journalist Charlotte Higgins and novelist Kit De Waal. In addition, John has been reading The Northumbrians by Dan Jackson while Andy talks about Never Let Me Go - and other books - by Nobel laureate Kazuo Ishiguro.",
+        "episode_pub_date": "Mon, 09 Dec 2019 07:00:13 +0000",
+        "episode_author": "Unbound",
+        "episode_duration_unix": 89717445,
+        "episode_duration": "01:02:18",
+        "episode_format": "audio/mpeg",
+        "episode_url": "http://feeds.soundcloud.com/stream/724524883-backlistedpod-riceyman-steps-by-arnold-bennett.mp3",
+        "episode_keywords": null
+      },
       {
         "episode_title": "Edith's Diary by Patricia Highsmith",
         "episode_desc": "Patricia Highsmith's novel Edith's Diary (1977) is the book under discussion. John and Andy are joined by writers Karen McLeod and John Grindrod. Plus Andy has been reading Alfred Hitchcock and the Three Investigators in The Mystery of the Stuttering Parrot and John talks about Daily Rituals: Women at Work by Mason Currey. This episode was recorded live at Bookseller Crow (https://booksellercrow.co.uk) in South London on Nov 13th 2019.",
@@ -2204,10 +2215,23 @@
     "feed_title": "VINTAGE BOOKS",
     "feed_desc": "<p>The VINTAGE Podcast is a weekly books podcast, released every Sunday, hosted by Leena Norms. Author interviews, book news and discussions on subjects ranging from literary fiction to graphic novels, cookery to crime fiction, history and travel to biography and poetry. It comes from the publishers of Jo Nesbo, Nigella Lawson, Irvine Welsh, Haruki Murakami, Ian McEwan, Joe Sacco, Anne Enright, Mark Haddon and more. #VINTAGEPodcast</p>",
     "feed_lang": "en",
-    "feed_last_built": "Tue, 12 Nov 2019 14:28:50 +0000",
+    "feed_last_built": "Sun, 08 Dec 2019 02:03:46 +0000",
     "feed_cvr_img": "<itunes:image href=\"https://thumborcdn.acast.com/M31zv1zJo4MgtHQoRwtoCm0cApY=/1500x1500/https://mediacdn.acast.com/assets/429005d3-6272-4999-92db-be6382d31156/-jyr9mj62-vintage_podcast_new.jpg\"/>",
     "feed_category": "<itunes:category text=\"Arts\">\n  <itunes:category text=\"Books\"/>\n  <itunes:category text=\"Literature\"/>\n</itunes:category>",
     "episodes": [
+      {
+        "episode_title": "Why you should read Japanese Classics ᛫ Rowan Hisayo Buchanan & Polly Barton",
+        "episode_desc": "<p>Take a look at all five in the Vintage Japanese Classics... https://www.penguin.co.uk/series/vincjap/vintage-classic-japanese-series.html</p><p><br></p><p>Thanks to our guests:&nbsp;</p><p>Polly Barton</p><p>https://twitter.com/pollyfmbarton</p><p>https://www.pollybarton.net/</p><p>and</p><p>Rowan Hisayo Buchanan&nbsp;</p><p>https://twitter.com/rowanhlb</p><p>https://rowanhisayo.com/</p><p><br></p><p>Episode mentioned with Intan Paramaditha ... https://open.spotify.com/episode/4PfL1WDt2l4RXamDIb2V5N</p><p><br></p><p><br></p><p>Follow us on twitter: twitter.com/vintagebooks</p><p><br></p><p>Sign up to our bookish newsletter to hear all about our new releases, see exclusive extracts and win prizes: po.st/vintagenewsletter</p><p><br></p><p>Music is Orbiting A Distant Planet by Quantum Jazz http://po.st/OrbitingADistant</p>  For information regarding your data privacy, visit <a href=\"https://www.acast.com/privacy\">acast.com/privacy</a>",
+        "episode_pub_date": "Sun, 08 Dec 2019 02:02:00 +0000",
+        "episode_author": null,
+        "episode_duration_unix": 84700184,
+        "episode_duration": "00:44:06",
+        "episode_format": "audio/mpeg",
+        "episode_url": "https://media.acast.com/vintagepodcast/whyyoushouldreadjapaneseclassics-rowanhisayobuchanan-pollybarton/media.mp3",
+        "episode_keywords": [
+
+        ]
+      },
       {
         "episode_title": "The history we don't hear about ᛫ Colin Grant",
         "episode_desc": "<p>Colin Grant talks about his passion to capture the stories of Windrush, and his incredible book <em>Homecoming, w</em>hich<em>&nbsp;</em>draws on over a hundred first-hand interviews, archival recordings and memoirs by the women and men who came to Britain from the West Indies between the late 1940s and the early 1960s.</p><p>Take a closer look at the book: <a href=\"https://www.penguin.co.uk/books/1116148/homecoming/9781787331051.html\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.penguin.co.uk/books/1116148/homecoming/9781787331051.html</a></p><p><br></p><p>Follow us on twitter: twitter.com/vintagebooks</p><p><br></p><p>Sign up to our bookish newsletter to hear all about our new releases, see exclusive extracts and win prizes: po.st/vintagenewsletter</p><p><br></p><p>Music is Orbiting A Distant Planet by Quantum Jazz http://po.st/OrbitingADistant</p>  For information regarding your data privacy, visit <a href=\"https://www.acast.com/privacy\">acast.com/privacy</a>",
