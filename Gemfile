@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 gemspec
 
+gem "jekyll", "~> 3.4"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'rss', '~> 0.2.8'
