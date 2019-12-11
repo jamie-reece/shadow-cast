@@ -36,12 +36,13 @@ sidebar_home_link:  true
 
 permalink: pretty
          
+# page gen config
 
-page_gen:
-  - index_files:
-    data: all_data
-    template: podcast
-    name: feed_title
-    dir: podcasts
-    extension:
-    filter:
+# page_gen:
+#   - index_files:
+#     data: 
+#     template: 
+#     name: 
+#     dir: 
+#     extension:
+#     filter:
