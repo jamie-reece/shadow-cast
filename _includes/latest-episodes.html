@@ -1,10 +1,10 @@
 <div class="episodes-list">
-  {% assign episodes = site.data.episodes | sort: "episode_pub_date" | reverse %}
+  {% assign episodes = site.data.episodes %}
   {% for episode in episodes limit: 10 %}
   <div class="episode">
     <div class="episode-content">
-      <h2>{{ episode.title }}</h2>
-      <p>{{ episode.desc }}</p>
+      <h2 class="episode-title">{{ episode.title }}</h2>
+      <p>{{ episode.desc | truncatewords: 100 }}</p>
     </div>
     <div class="episode-meta">
       <img class="thumbnail" src="{{ episode.thumbnail }}">

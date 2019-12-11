@@ -14,7 +14,6 @@ def parse_feed(url)
   feed = Feedjira.parse(xml)
   doc = Nokogiri::HTML(HTTParty.get(url).body)
   puts "Parsing '#{doc.title}' at #{url}..."
-  # binding.pry
   episodes = Array.new
   feed.entries.each do |entry|
     episode = {
@@ -69,6 +68,7 @@ def edit_data(filename)
     episode["length"] = episode["length"].to_i
     # episode["desc"] = remove_html_tags(episode["desc"])
   end
+  json = json.sort_by { |episode| episode["pub_date"] }.reverse
   File.open("./_data/episodes.json", "w") do |file|
     file.write(JSON.pretty_generate(json))
   end
