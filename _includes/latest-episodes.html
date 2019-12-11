@@ -1,16 +1,16 @@
 <div class="episodes-list">
-  {% assign episodes = site.data.mapped_data | sort: "episode_pub_date" | reverse %}
-  {% for episode in episodes %}
+  {% assign episodes = site.data.episodes | sort: "episode_pub_date" | reverse %}
+  {% for episode in episodes limit: 10 %}
   <div class="episode">
     <div class="episode-content">
-      <h2>{{ episode.episode_title }}</h2>
-      <p>{{ episode.episode_desc }}</p>
+      <h2>{{ episode.title }}</h2>
+      <p>{{ episode.desc }}</p>
     </div>
     <div class="episode-meta">
-      <img class="thumbnail" src="{{ episode.episode_feed_cvr_img }}">
-      <h3 class="feed-title">{{ episode.episode_feed_title | split: ":" | first }}</h3>
-      <datetime class="episode-pub-date">{{ episode.episode_pub_date | date_to_long_string }}</datetime>
-      <p class="episode-duration">{{ episode.episode_duration }}</p>
+      <img class="thumbnail" src="{{ episode.thumbnail }}">
+      <h3 class="feed-title">{{ episode.feed | split: ":" | first | split: "|" | first }}</h3>
+      <datetime class="episode-pub-date">{{ episode.pub_date | date_to_long_string }}</datetime>
+      <p class="episode-duration">{{ episode.duration }}</p>
     </div>
     <!-- <audio controls>
       <source src="{{ episode.episode_url }}" type='{{ episode.episode_format }}'>
