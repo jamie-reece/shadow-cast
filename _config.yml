@@ -38,11 +38,11 @@ permalink: pretty
          
 # page gen config
 
-# page_gen:
-#   - index_files:
-#     data: 
-#     template: 
-#     name: 
-#     dir: 
-#     extension:
-#     filter:
+page_gen:
+  - index_files: true
+    data: podcasts
+    template: podcast
+    name: title
+    dir:
+    extension:
+    filter:

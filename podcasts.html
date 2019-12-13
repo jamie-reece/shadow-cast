@@ -4,8 +4,6 @@ title: Podcasts
 sidebar_link: true
 ---
 
-{% for feed in site.data.all_data %}
-  <p>
-    <a href="{{ feed.feed_title | slugify }}">{{ feed.feed_title }}</a>
-  </p>
+{% for podcast in site.data.podcasts %}
+  <h2><a href="{{ site.baseurl}}/{{ podcast.title | datapage_url: 'podcasts' | replace: '.html','' }}">{{ podcast.title }}</a></h2>
 {% endfor %}

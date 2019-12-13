@@ -2,8 +2,17 @@
 layout: default
 ---
 
-<h1>{{ page.name }}</h1>
-
+<header>
+  <h1 class="page-title">{{ page.title }}</h1>
+  <hr>
+</header>
 <div class="content">
-  {{ content }}
+  <!-- <p><a href="{{ page.src }}">{{ page.src }}</a></p> -->
+  <div class="episodes-list">
+    {% for episode in page.episodes %}
+      <p><a href="{{ episode.url }}">{{ episode.title }}</a></p>
+      <datetime>{{ episode.pub_date | date_to_string }}</datetime>
+      <hr>
+    {% endfor %}
+  </div>
 </div>
