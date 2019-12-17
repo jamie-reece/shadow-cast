@@ -1,2 +1,15 @@
 https://goldenharebooks.com/feed/podcast/
 https://feeds.soundcloud.com/users/soundcloud:users:13730980/sounds.rss
+https://feeds.soundcloud.com/users/soundcloud:users:14268499/sounds.rss
+https://rss.acast.com/vintagepodcast
+https://feeds.soundcloud.com/users/soundcloud:users:8180342/sounds.rss
+https://www.theguardian.com/books/series/books/podcast.xml
+https://feeds.soundcloud.com/users/soundcloud:users:313878848/sounds.rss
+https://rss.acast.com/readlikeawriter
+https://independentpublishersguild.libsyn.com/rss
+https://feed.pippa.io/public/shows/5ce3bd97862700d1704d3dfb
+https://feeds.soundcloud.com/users/soundcloud:users:47550828/sounds.rss
+https://feeds.soundcloud.com/users/soundcloud:users:535574250/sounds.rss
+https://feeds.fireside.fm/verybadwizards/rss
+https://rss.acast.com/londonreviewpodcasts
+https://feeds.soundcloud.com/users/soundcloud:users:1076867/sounds.rss
