@@ -3,6 +3,7 @@ require "httparty"
 require "nokogiri"
 require "pry"
 require "cgi"
+require "rss"
 
 def remove_html_tags(str)
   re = /<("[^"]*"|'[^']*'|[^'">])*>/

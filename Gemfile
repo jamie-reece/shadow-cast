@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'nokogiri', '~> 1.10', '>= 1.10.4'
   gem 'pry', '~> 0.12.2'
   gem 'slugify', '~> 1.0', '>= 1.0.7'
+  gem 'rss', '~> 0.2.8'
 end
