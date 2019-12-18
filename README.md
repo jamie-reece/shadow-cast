@@ -13,6 +13,7 @@ Books podcasts
 - [ ] Work out a method for manually adding specific episodes from non-books podcasts, e.g. VBW
 - [ ] Featured episode
 - [ ] Sort podcasts on `/podcasts` page alphabetically
+- [ ] Design `/podcast/*` page w/ episodes list, desc, etc.
 - [ ] Add episode number to `/podcasts` preview page
 - [ ] Debug missing feeds
   - [ ] NY Fiction
