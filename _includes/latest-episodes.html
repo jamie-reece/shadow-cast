@@ -1,20 +1,28 @@
-<div class="episodes-list">
-  {% assign episodes = site.data.episodes %}
-  {% for episode in episodes limit: 10 %}
-  <div class="episode">
-    <div class="episode-content">
-      <h2 class="episode-title">{{ episode.title }}</h2>
-      <p>{{ episode.desc | truncatewords: 100 }}</p>
+  <div class="episodes-list">
+    {% assign episodes = site.data.episodes %}
+    {% for episode in episodes limit: 10 %}
+    <div class="episode">
+      <div class="episode-content">
+        <h2 class="episode-title">{{ episode.title }}</h2>
+        <p>{{ episode.desc | truncatewords: 100 }}</p>
+      </div>
+      <div class="episode-meta">
+        {% if episode.thumbnail %}
+          <img class="thumbnail" src="{{ episode.thumbnail }}">
+        {% elsif episode.backup_thumbnail %}
+          <img class="thumbnail" src="{{ episode.backup_thumbnail }}">
+        {% endif %}
+        <h3 class="feed-title">
+          <a href="{{ site.baseurl}}/{{ episode.feed | datapage_url: 'podcasts' | replace: '.html','' }}">
+            {{ episode.feed | split: ":" | first | split: "|" | first }}
+          </a>
+        </h3>
+        <datetime class="episode-pub-date">{{ episode.pub_date | date_to_long_string }}</datetime>
+        <p class="episode-duration">{{ episode.duration }}</p>
+      </div>
+      <!-- <audio controls>
+        <source src="{{ episode.episode_url }}" type='{{ episode.episode_format }}'>
+      </audio> -->
     </div>
-    <div class="episode-meta">
-      <img class="thumbnail" src="{{ episode.thumbnail }}">
-      <h3 class="feed-title">{{ episode.feed | split: ":" | first | split: "|" | first }}</h3>
-      <datetime class="episode-pub-date">{{ episode.pub_date | date_to_long_string }}</datetime>
-      <p class="episode-duration">{{ episode.duration }}</p>
-    </div>
-    <!-- <audio controls>
-      <source src="{{ episode.episode_url }}" type='{{ episode.episode_format }}'>
-    </audio> -->
+    {% endfor %}
   </div>
-  {% endfor %}
-</div>

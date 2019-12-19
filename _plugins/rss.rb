@@ -18,12 +18,25 @@ def parse_feed(url)
   # parse response w/ nokogiri
   doc = Nokogiri::HTML(HTTParty.get(url).body)
   puts "Parsing '#{doc.title}' at #{url}..."
-  # create hash with basic feed details and episodes array
-  podcast = {
-    src: url,
-    title: doc.title,
-    episodes: Array.new
-  }
+  # 
+    rss_feed = RSS::Parser.parse(open(url))
+    # feed_meta = {
+    #   feed_owner: (feed.channel.itunes_owner.itunes_name rescue nil),
+    #   feed_title: (feed.channel.title rescue nil),
+    #   feed_desc: (feed.channel.description rescue nil),
+    #   feed_lang: (feed.channel.language rescue nil),
+    #   feed_last_built: (feed.channel.lastBuildDate rescue nil),
+    #   feed_cvr_img: (feed.channel.itunes_image rescue nil),
+    #   feed_category: (feed.channel.itunes_category rescue nil)
+    # }
+    # create hash with basic feed details and episodes array
+    podcast = {
+      src: url,
+      title: doc.title,
+      desc: rss_feed.channel.description,
+      cvr_img: rss_feed.channel.itunes_image.href,
+      episodes: Array.new
+    }
   # iterate over feed, storing each episode in episodes array
   feed.entries.each do |entry|
     episode = {
@@ -38,7 +51,8 @@ def parse_feed(url)
       duration: entry.itunes_duration,
       length: entry.enclosure_length,
       type: entry.enclosure_type,
-      thumbnail: entry.itunes_image
+      thumbnail: entry.itunes_image,
+      backup_thumbnail: rss_feed.channel.itunes_image.href
     }
     # store episode in episodes array
     podcast[:episodes].push(episode)

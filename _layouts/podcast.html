@@ -7,12 +7,26 @@ layout: default
   <hr>
 </header>
 <div class="content">
-  <!-- <p><a href="{{ page.src }}">{{ page.src }}</a></p> -->
-  <div class="episodes-list">
-    {% for episode in page.episodes %}
-      <p><a href="{{ episode.url }}">{{ episode.title }}</a></p>
-      <datetime>{{ episode.pub_date | date_to_string }}</datetime>
-      <hr>
-    {% endfor %}
+  <div class="flex">
+    <div class="left-col">
+      <h2>Description</h2>
+      <p class="description">{{ page.desc }}</p>
+      <h2>Episodes</h2>
+      <div class="episodes-list">
+        {% for episode in page.episodes %}
+          <p><a href="{{ episode.url }}">{{ episode.title }}</a></p>
+          <datetime>{{ episode.pub_date | date_to_string }}</datetime>
+          <p class="episode-desc">{{ episode.desc | truncatewords: 35 }}</p>
+          <hr>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="right-col">
+      <img class="cvr-img" src="{{ page.cvr_img }}">
+      <h3>At a glance:</h3>
+      <p class="">Last aired: {{ page.episodes.first.pub_date | date_to_string }}</p>
+      <p class="">Total episodes: {{ page.episodes | size }}</p>
+      <p class="">First aired: {{ page.episodes.last.pub_date | date_to_string }}</p>
+    </div>
   </div>
 </div>

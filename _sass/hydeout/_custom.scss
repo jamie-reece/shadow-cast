@@ -1,5 +1,7 @@
 // custom styles not shipped w/ theme
 
+// homepage
+
 .episodes-list {
   
   .episode {
@@ -35,6 +37,26 @@
         margin-top: 0.75rem;
       }
 
+    }
+
+  }
+
+}
+
+// podcast layout page
+
+.content {
+
+  .flex {
+    display: flex;
+
+    .left-col {
+      flex: 1 0 65%;
+    }
+
+    .right-col {
+      flex: 1 0 35%;
+      margin-left: 2.5rem;
     }
 
   }

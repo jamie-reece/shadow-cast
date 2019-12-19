@@ -17,3 +17,4 @@ Books podcasts
 - [ ] Add episode number to `/podcasts` preview page
 - [ ] Debug missing feeds
   - [ ] NY Fiction
+  - [ ] Golden Hare Books
