@@ -4,7 +4,7 @@
     <div class="episode">
       <div class="episode-content">
         <h2 class="episode-title"><a href="/podcasts/{{ episode.feed | slugify }}#{{ episode.title | slugify }}">{{ episode.title }}</a></h2>
-        <p class="episode-description">{{ episode.desc | truncatewords: 100 }}</p>
+        <p class="episode-description">{{ episode.desc }}</p>
       </div>
       <div class="episode-meta">
         {% if episode.thumbnail %}

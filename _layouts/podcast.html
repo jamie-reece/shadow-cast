@@ -18,6 +18,10 @@ layout: default
             <h3 class="episode-title" id="{{ episode.title | slugify }}">{{ episode.title }}</h3>
             <datetime>{{ episode.pub_date | date_to_string }}</datetime>
             <p class="episode-desc">{{ episode.desc | truncatewords: 35 }}</p>
+            <!-- <audio controls>
+              <source src="{{ episode.audio }}" type='{{ episode.type }}'>
+            </audio> -->
+            <button><a href="{{ episode.audio }}">Listen</a></button>
             <hr>
           </div>
         {% endfor %}
