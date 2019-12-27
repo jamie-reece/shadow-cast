@@ -14,10 +14,12 @@ layout: default
       <h2>Episodes</h2>
       <div class="episodes-list">
         {% for episode in page.episodes %}
-          <p><a href="{{ episode.url }}">{{ episode.title }}</a></p>
-          <datetime>{{ episode.pub_date | date_to_string }}</datetime>
-          <p class="episode-desc">{{ episode.desc | truncatewords: 35 }}</p>
-          <hr>
+          <div class="episode-is-preview">
+            <h3>{{ episode.title }}</h3>
+            <datetime>{{ episode.pub_date | date_to_string }}</datetime>
+            <p class="episode-desc">{{ episode.desc | truncatewords: 35 }}</p>
+            <hr>
+          </div>
         {% endfor %}
       </div>
     </div>

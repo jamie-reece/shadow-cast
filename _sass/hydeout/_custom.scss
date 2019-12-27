@@ -52,11 +52,19 @@
 
     .left-col {
       flex: 1 0 65%;
+      padding-right: 2rem;
+
+      .episodes-list {
+        padding-right: 1rem;
+      }
+
     }
 
     .right-col {
       flex: 1 0 35%;
-      margin-left: 2.5rem;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
     }
 
   }
