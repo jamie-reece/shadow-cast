@@ -3,8 +3,8 @@
     {% for episode in episodes limit: 10 %}
     <div class="episode">
       <div class="episode-content">
-        <h2 class="episode-title">{{ episode.title }}</h2>
-        <p>{{ episode.desc | truncatewords: 100 }}</p>
+        <h2 class="episode-title"><a href="/podcasts/{{ episode.feed | slugify }}#{{ episode.title | slugify }}">{{ episode.title }}</a></h2>
+        <p class="episode-description">{{ episode.desc | truncatewords: 100 }}</p>
       </div>
       <div class="episode-meta">
         {% if episode.thumbnail %}
@@ -13,7 +13,7 @@
           <img class="thumbnail" src="{{ episode.backup_thumbnail }}">
         {% endif %}
         <h3 class="feed-title">
-          <a href="{{ site.baseurl}}/{{ episode.feed | datapage_url: 'podcasts' | replace: '.html','' }}">
+          <a href="{{ site.baseurl }}/{{ episode.feed | datapage_url: 'podcasts' | replace: '.html','' }}">
             {{ episode.feed | split: ":" | first | split: "|" | first }}
           </a>
         </h3>

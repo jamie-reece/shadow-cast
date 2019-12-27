@@ -16,6 +16,7 @@
 
       h2.episode-title {
         margin-top: 0;
+        margin-bottom: 1rem;
       }
 
     }
@@ -55,6 +56,14 @@
 
       .episodes-list {
         padding-right: 1rem;
+
+        h3.episode-title::before {
+          content: "";
+          display: block;
+          height: 1.8rem; /* fixed header height*/
+          margin: -1.8rem 0 0; /* negative fixed header height */
+        }
+
       }
 
     }
@@ -85,6 +94,11 @@
 
       .episode-content {
         padding: 0 1rem;
+
+        .episode-description {
+          display: none;
+        }
+
       }
 
       .episode-meta {
