@@ -70,3 +70,31 @@
   }
 
 }
+
+// custom media queries
+
+@media (max-width: $large-breakpoint) {
+  
+  .content {
+
+    .flex {
+      flex-direction: column-reverse;
+
+      .left-col {
+        padding-right: 0;
+
+        .episodes-list {
+          padding-right: 0;
+        }
+
+      }
+
+      .right-col {
+        position: relative;
+      }
+
+    }
+
+  }
+
+}
